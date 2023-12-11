@@ -2,7 +2,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-
 import 'package:app_compromissos/models/compromissos.dart';
 import 'package:app_compromissos/telas/editar.dart';
 
@@ -302,3 +301,4 @@ class _HomeTelaState extends State<HomeTelaState> {
     );
   }
 }
+
