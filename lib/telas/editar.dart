@@ -15,10 +15,9 @@ class _EditScreenState extends State<EditScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     if (widget.compromissos != null) {
       _titleController = TextEditingController(text: widget.compromissos!.titulo);
-      _contentController = TextEditingController(text: widget.compromissos!.conteudo);
+      _contentController = TextEditingController(text: widget.compromissos!.descricao);
     }
 
     super.initState();
