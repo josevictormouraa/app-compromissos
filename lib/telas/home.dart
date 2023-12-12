@@ -66,7 +66,7 @@ class _HomeTelaState extends State<HomeTelaState> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const Text(
-                  'Compromissos',
+                  'MyCompromissos',
                   style: TextStyle(fontSize: 30, color: Color.fromARGB(255, 255, 255, 255)),
                 ),
                 IconButton(
@@ -126,6 +126,7 @@ class _HomeTelaState extends State<HomeTelaState> {
                   return Card(
                     margin: const EdgeInsets.only(bottom: 20),
                     elevation: 3,
+                    color: Colors.grey.shade800,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)),
                     child: Padding(
@@ -166,7 +167,7 @@ class _HomeTelaState extends State<HomeTelaState> {
                           text: TextSpan(
                             text: '${filtrarCompromissos[index].titulo} \n',
                             style: const TextStyle(
-                              color: Color.fromARGB(255, 0, 0, 0),
+                              color: Color.fromARGB(255, 255, 255, 255),
                               fontWeight: FontWeight.bold,
                               fontSize: 18,
                               height: 1.5,
@@ -175,7 +176,7 @@ class _HomeTelaState extends State<HomeTelaState> {
                               TextSpan(
                                 text: filtrarCompromissos[index].descricao,
                                 style: const TextStyle(
-                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  color: Color.fromARGB(255, 255, 255, 255),
                                   fontWeight: FontWeight.normal,
                                   fontSize: 14,
                                   height: 1.5,
@@ -187,11 +188,11 @@ class _HomeTelaState extends State<HomeTelaState> {
                         subtitle: Padding(
                           padding: const EdgeInsets.only(top: 8.0),
                           child: Text(
-                            'Editado: ${DateFormat('dd/MM/yyyy HH:mm').format(filtrarCompromissos[index].modificarHora)}',
-                            style: TextStyle(
+                            'Criado: ${DateFormat('dd/MM/yyyy HH:mm').format(filtrarCompromissos[index].modificarHora)}',
+                            style: const TextStyle(
                               fontSize: 10,
                               fontStyle: FontStyle.italic,
-                              color: Colors.grey.shade800,
+                              color:  Color.fromARGB(255, 198, 196, 196),
                             ),
                           ),
                         ),
@@ -204,6 +205,7 @@ class _HomeTelaState extends State<HomeTelaState> {
                           },
                           icon: const Icon(
                             Icons.delete,
+                            color: Colors.blue,
                           ),
                         ),
                       ),
@@ -237,11 +239,11 @@ class _HomeTelaState extends State<HomeTelaState> {
           }
         },
         elevation: 10,
-        backgroundColor: Colors.grey.shade800,
+        backgroundColor: Color.fromARGB(255, 0, 0, 0),
         child: const Icon(
           Icons.add,
           size: 38,
-          color: Colors.blue,
+          color: Colors.blue
         ),
       ),
     );
@@ -301,4 +303,3 @@ class _HomeTelaState extends State<HomeTelaState> {
     );
   }
 }
-

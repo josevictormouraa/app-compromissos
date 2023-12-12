@@ -28,8 +28,8 @@ class _AuthScreenState extends State<AuthScreen> {
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
-                  Cores.azulTopoGradiente,
-                  Cores.azulBaixoGradiente
+                  Cores.pretoTopoGradiente,
+                  Cores.pretoBaixoGradiente
                 ],
               ),
             ),
@@ -52,7 +52,7 @@ class _AuthScreenState extends State<AuthScreen> {
                         style: TextStyle(
                           fontSize: 35,
                           fontWeight: FontWeight.bold,
-                          color: Colors.black,
+                          color: Color.fromARGB(255, 255, 255, 255),
                         ),
                       ),
                       const SizedBox(height: 30),
@@ -102,7 +102,14 @@ class _AuthScreenState extends State<AuthScreen> {
                             );
                           }
                         },
-                        child: const Text('Login'),
+                        child: const Text('Login', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.grey.shade800, // Black
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(64), // All borders rounded
+                          ),
+                          padding: const EdgeInsets.all(20.0), // Padding on all sides
+                        ),
                       ),
                     ],
                   ),

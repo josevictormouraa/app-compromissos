@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Cores{
-  static const Color azulEscuro = Color(0xFF0A6D92);
-  static const Color azulTopoGradiente = Color(0xFF00ADFA);
-  static const Color azulBaixoGradiente = Color(0xFFBFF9FF);
+  static const Color preto = Color.fromARGB(255, 71, 127, 41);
+  static const Color pretoTopoGradiente = Color.fromARGB(255, 0, 0, 0);
+  static const Color pretoBaixoGradiente = Color.fromARGB(255, 66, 65, 65);
 }
