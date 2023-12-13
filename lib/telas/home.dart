@@ -117,7 +117,7 @@ class _HomeTelaState extends State<HomeTelaState> {
                 ),
               ),
             ),
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
             Expanded(
               child: ListView.builder(
                 padding: const EdgeInsets.only(top: 30),
