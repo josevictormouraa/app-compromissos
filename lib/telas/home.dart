@@ -239,7 +239,7 @@ class _HomeTelaState extends State<HomeTelaState> {
           }
         },
         elevation: 10,
-        backgroundColor: Color.fromARGB(255, 0, 0, 0),
+        backgroundColor: const Color.fromARGB(255, 0, 0, 0),
         child: const Icon(
           Icons.add,
           size: 38,
@@ -303,3 +303,4 @@ class _HomeTelaState extends State<HomeTelaState> {
     );
   }
 }
+

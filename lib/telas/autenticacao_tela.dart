@@ -62,7 +62,7 @@ class _AuthScreenState extends State<AuthScreen> {
                       const SizedBox(height: 30),
                       TextFormField(
                         controller: _emailController,
-                        decoration: getAuthenticationInputDecoration("E-mail"),
+                        decoration: decorationInput("E-mail"),
                         validator: (String? value) {
                           // Validate email format
                           if (value == null) {
@@ -80,7 +80,7 @@ class _AuthScreenState extends State<AuthScreen> {
                       const SizedBox(height: 8),
                       TextFormField(
                         controller: _senhaController,
-                        decoration: getAuthenticationInputDecoration("Senha"),
+                        decoration: decorationInput("Senha"),
                         obscureText: true,
                         validator: (String? value) {
                           // Validate password length
@@ -94,6 +94,7 @@ class _AuthScreenState extends State<AuthScreen> {
                         },
                       ),
                       const SizedBox(height: 16),
+                      //Campo login
                       ElevatedButton(
                         onPressed: () {
                           if (_formKey.currentState!.validate()) {

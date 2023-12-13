@@ -16,7 +16,7 @@ class MainApp extends StatelessWidget {
       create: (context) => CompromissosProvider(),
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: const AuthScreen(),
+        home: AuthScreen(),
       ),
     );
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-InputDecoration getAuthenticationInputDecoration(String label){
+InputDecoration decorationInput(String label){
   return InputDecoration(
     hintText: label,
     fillColor: Colors.white,
