@@ -1,7 +1,9 @@
-import 'package:app_compromissos/componetes/cores.dart';
-import 'package:app_compromissos/componetes/style_decoracao.dart';
-import 'package:app_compromissos/telas/home.dart';
 import 'package:flutter/material.dart';
+// import 'package:provider/provider.dart';
+import 'package:app_compromissos/componetes/style_decoracao.dart';
+// import 'package:app_compromissos/providers/compromissos_provider.dart';
+import 'package:app_compromissos/telas/home.dart';
+import 'package:app_compromissos/componetes/cores.dart';
 
 class AuthScreen extends StatefulWidget {
   const AuthScreen({Key? key}) : super(key: key);
@@ -11,13 +13,15 @@ class AuthScreen extends StatefulWidget {
 }
 
 class _AuthScreenState extends State<AuthScreen> {
+  
   final _formKey = GlobalKey<FormState>();
 
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _senhaController = TextEditingController();
-
+  
   @override
   Widget build(BuildContext context) {
+    // final compromissosProvider = Provider.of<CompromissosProvider>(context);
     return Scaffold(
       backgroundColor: Colors.grey.shade900,
       body: Stack(

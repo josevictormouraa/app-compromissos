@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:app_compromissos/telas/autenticacao.dart';
-
+import 'package:provider/provider.dart';
+import 'package:app_compromissos/telas/autenticacao_tela.dart';
+import 'package:app_compromissos/providers/compromissos_provider.dart';
 
 void main() {
   runApp(const MainApp());
@@ -11,10 +12,12 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: AuthScreen(),
+    return ChangeNotifierProvider(
+      create: (context) => CompromissosProvider(),
+      child: const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: const AuthScreen(),
+      ),
     );
   }
 }
-
